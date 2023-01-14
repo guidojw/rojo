@@ -1,6 +1,6 @@
 [package]
-name = "rojo"
-version = "7.2.1"
+name = "guido_rojo"
+version = "7.2.2"
 rust-version = "1.58.1"
 authors = ["Lucien Greathouse <me@lpghatguy.com>"]
 description = "Enables professional-grade development tools for Roblox developers"
@@ -51,11 +51,11 @@ memofs = { version = "0.2.0", path = "crates/memofs" }
 # rbx_reflection_database = { path = "../rbx-dom/rbx_reflection_database" }
 # rbx_xml = { path = "../rbx-dom/rbx_xml" }
 
-rbx_binary = "0.6.5"
+rbx_binary = { package = "guido_rbx_binary", version = "0.6.7" }
 rbx_dom_weak = "2.4.0"
 rbx_reflection = "4.2.0"
-rbx_reflection_database = "0.2.2"
-rbx_xml = "0.12.3"
+rbx_reflection_database = { package = "guido_rbx_reflection_database", version = "0.2.6" }
+rbx_xml = { package = "guido_rbx_xml", version = "0.12.5" }
 
 anyhow = "1.0.44"
 backtrace = "0.3.61"

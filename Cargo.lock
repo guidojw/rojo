@@ -766,6 +766,97 @@ dependencies = [
 ]
 
 [[package]]
+name = "guido_rbx_binary"
+version = "0.6.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "02e1bf13f9f2bdf2ba007e6ccb4f37207e51118f4168dbe8191d9582c0e64e8a"
+dependencies = [
+ "guido_rbx_reflection_database",
+ "log",
+ "lz4",
+ "profiling",
+ "rbx_dom_weak",
+ "rbx_reflection",
+ "thiserror",
+]
+
+[[package]]
+name = "guido_rbx_reflection_database"
+version = "0.2.6+roblox-557"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6ea7288aa1211f622f0825a93eed418f005dec6e001eab44871596bb63180fb5"
+dependencies = [
+ "lazy_static",
+ "rbx_reflection",
+ "rmp-serde",
+ "serde",
+]
+
+[[package]]
+name = "guido_rbx_xml"
+version = "0.12.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2ae04c1762b0290a603a16e7d4ed85af4730dce35beb966e93f4a6142c276168"
+dependencies = [
+ "base64",
+ "guido_rbx_reflection_database",
+ "log",
+ "rbx_dom_weak",
+ "rbx_reflection",
+ "xml-rs",
+]
+
+[[package]]
+name = "guido_rojo"
+version = "7.2.2"
+dependencies = [
+ "anyhow",
+ "backtrace",
+ "bincode",
+ "clap 3.2.7",
+ "criterion",
+ "crossbeam-channel",
+ "csv",
+ "embed-resource",
+ "env_logger",
+ "fs-err",
+ "futures",
+ "globset",
+ "guido_rbx_binary",
+ "guido_rbx_reflection_database",
+ "guido_rbx_xml",
+ "humantime",
+ "hyper",
+ "insta",
+ "jod-thread",
+ "log",
+ "maplit",
+ "memofs",
+ "notify",
+ "opener",
+ "paste",
+ "pretty_assertions",
+ "profiling",
+ "rbx_dom_weak",
+ "rbx_reflection",
+ "reqwest",
+ "ritz",
+ "roblox_install",
+ "rojo-insta-ext",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "tempfile",
+ "termcolor",
+ "thiserror",
+ "tokio",
+ "tracy-client",
+ "uuid",
+ "walkdir",
+ "winreg 0.10.1",
+]
+
+[[package]]
 name = "h2"
 version = "0.3.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1642,21 +1733,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rbx_binary"
-version = "0.6.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "842a9253d37ca9df932108806a0f6c97195f2411bf05671e88744be622548807"
-dependencies = [
- "log",
- "lz4",
- "profiling",
- "rbx_dom_weak",
- "rbx_reflection",
- "rbx_reflection_database",
- "thiserror",
-]
-
-[[package]]
 name = "rbx_dom_weak"
 version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1677,18 +1753,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rbx_reflection_database"
-version = "0.2.5+roblox-530"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e790ac1c92dee33669e7e12414caf75eb5cfce6fb5c54998eb9001d204fbab1"
-dependencies = [
- "lazy_static",
- "rbx_reflection",
- "rmp-serde",
- "serde",
-]
-
-[[package]]
 name = "rbx_types"
 version = "1.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1701,20 +1765,6 @@ dependencies = [
  "rand",
  "serde",
  "thiserror",
-]
-
-[[package]]
-name = "rbx_xml"
-version = "0.12.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2559683f2f9205d442bd9083d7557be58b6cdcd0e5cc22600a6546a08e6d54f0"
-dependencies = [
- "base64",
- "log",
- "rbx_dom_weak",
- "rbx_reflection",
- "rbx_reflection_database",
- "xml-rs",
 ]
 
 [[package]]
@@ -1864,56 +1914,6 @@ dependencies = [
  "dirs",
  "thiserror",
  "winreg 0.6.2",
-]
-
-[[package]]
-name = "rojo"
-version = "7.2.1"
-dependencies = [
- "anyhow",
- "backtrace",
- "bincode",
- "clap 3.2.7",
- "criterion",
- "crossbeam-channel",
- "csv",
- "embed-resource",
- "env_logger",
- "fs-err",
- "futures",
- "globset",
- "humantime",
- "hyper",
- "insta",
- "jod-thread",
- "log",
- "maplit",
- "memofs",
- "notify",
- "opener",
- "paste",
- "pretty_assertions",
- "profiling",
- "rbx_binary",
- "rbx_dom_weak",
- "rbx_reflection",
- "rbx_reflection_database",
- "rbx_xml",
- "reqwest",
- "ritz",
- "roblox_install",
- "rojo-insta-ext",
- "serde",
- "serde_json",
- "serde_yaml",
- "tempfile",
- "termcolor",
- "thiserror",
- "tokio",
- "tracy-client",
- "uuid",
- "walkdir",
- "winreg 0.10.1",
 ]
 
 [[package]]
