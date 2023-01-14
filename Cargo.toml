@@ -1,5 +1,5 @@
 [package]
-name = "guido_rojo"
+name = "rojo"
 version = "7.2.2"
 rust-version = "1.58.1"
 authors = ["Lucien Greathouse <me@lpghatguy.com>"]
